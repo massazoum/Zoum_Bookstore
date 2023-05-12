@@ -6,10 +6,10 @@ function Nav() {
   return (
     <div className="DivNav">
       <div className="Bookstore-CMS">Bookstore CMS </div>
-      <div className="BOOKS"><Link to="./">Book</Link></div>
+      <div className="BOOKS"><Link to="./" className="book-link">Book</Link></div>
       <div className="CATEGORIES">
         {' '}
-        <Link to="./Author">Categories</Link>
+        <Link to="./Author" className="book-link">Categories</Link>
       </div>
     </div>
   );
