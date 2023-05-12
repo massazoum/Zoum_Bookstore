@@ -1,0 +1,152 @@
+
+.Divbook {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  height: 20vh;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.sectionA {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.action {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Typebook {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Comments {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Remove {
+  width: 3.375rem;
+  height: 1.188rem;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Edit {
+  width: 1.688rem;
+  height: 1.188rem;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sectionB {
+  display: flex;
+}
+
+.-Percent-Complete {
+  width: auto;
+  height: 2.438rem;
+  margin: 0.063rem 7.063rem 0 0.688rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.sectionC {
+  display: flex;
+  flex-direction: column;
+}
+
+.Current-Chapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Update-progress {
+  width: 8.938rem;
+  height: 1.225rem;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.DivBtns {
+  display: flex;
+}
