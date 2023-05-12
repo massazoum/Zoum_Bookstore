@@ -89,9 +89,8 @@ To run the project, open the index.html file in your web browser.
 To run tests, run the following command:
 
 ```tests
- npx hint .
  npx stylelint "**/*.{css,scss}"
- npx eslint .
+ npx eslint "**/*.{js,jsx}"
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
