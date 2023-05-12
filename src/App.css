@@ -1,0 +1,11 @@
+main {
+  background-color: var(--pale-grey);
+  width: 80vw;
+  padding-left: 5vw;
+  height: auto;
+  padding-bottom: 20px;
+  box-shadow: -1px 0 15px 13px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: -1px 0 15px 13px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: -1px 0 15px 13px rgba(0, 0, 0, 0.63);
+  margin-left: 5vw;
+}
