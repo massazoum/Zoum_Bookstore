@@ -1,15 +1,18 @@
 import './App.css';
 import React from 'react';
-import ListBook from './components/ListBooks';
+import { Routes, Route } from 'react-router-dom';
+import BookComponent from './components/ListBooks';
 import Nav from './components/NavBar';
-import Form from './components/FormAdd';
+import Categorie from './components/categories/Author';
 
 function App() {
   return (
     <main>
       <Nav />
-      <ListBook />
-      <Form />
+      <Routes>
+        <Route path="/" element={<BookComponent />} />
+        <Route path="/Author" element={<Categorie />} />
+      </Routes>
     </main>
   );
 }

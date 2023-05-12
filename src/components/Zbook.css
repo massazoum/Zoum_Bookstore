@@ -8,20 +8,22 @@
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .sectionA {
   display: flex;
   flex-direction: column;
   width: 500px;
+  row-gap: 10px;
 }
 
 .action {
-  width: 3.063rem;
+  width: auto;
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -35,7 +37,7 @@
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -48,7 +50,7 @@
 .Comments {
   width: 4.563rem;
   height: 1.188rem;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -64,7 +66,7 @@
 .Remove {
   width: 3.375rem;
   height: 1.188rem;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -80,7 +82,7 @@
 .Edit {
   width: 1.688rem;
   height: 1.188rem;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -101,7 +103,7 @@
   width: auto;
   height: 2.438rem;
   margin: 0.063rem 7.063rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: 'poppins', sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
@@ -111,17 +113,27 @@
   color: #121212;
 }
 
+.Oval-2 {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
 .sectionC {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
+  width: 20vw;
 }
 
 .Current-Chapter {
-  width: 7.875rem;
-  height: 1.125rem;
-  margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -134,7 +146,7 @@
 .Update-progress {
   width: 8.938rem;
   height: 1.225rem;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;

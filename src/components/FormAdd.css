@@ -1,6 +1,6 @@
 
 .Title {
-  font-family: Montserrat;
+  font-family: 'poppins', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -11,26 +11,28 @@
 }
 
 .DivForm {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .inpText {
   height: 23px;
-  width: 350px;
+  width: 40vw;
   margin-right: 15px;
 }
 
 .Select {
   height: 30px;
-  width: 150px;
+  width: 20vw;
 }
 
 .BtnSumit {
   margin-left: 10px;
   height: 30px;
+  width: 10vw;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: RobotoSlab;
+  font-family: 'poppins', sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
