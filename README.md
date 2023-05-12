@@ -91,6 +91,7 @@ To run tests, run the following command:
 ```tests
  npx stylelint "**/*.{css,scss}"
  npx eslint "**/*.{js,jsx}"
+ npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
