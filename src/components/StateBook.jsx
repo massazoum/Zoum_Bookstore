@@ -1,9 +1,9 @@
 import React from 'react';
-import './Zbook.css';
 import PropTypes from 'prop-types';
+import './Zbook.css';
 
 function Zbook({
-  ll, l, lll, llll, lllll,
+  ll, l, lll, llll, lllll, Removebook,
 }) {
   return (
     <div className="Divbook" id="Z">
@@ -20,7 +20,7 @@ function Zbook({
         <div className="DivBtns">
           <button className="Comments" type="button">Comments</button>
 
-          <button className="Remove" type="button">Remove</button>
+          <button className="Remove" onClick={Removebook} type="button">Remove</button>
 
           <button className="Edit" type="button">Edit</button>
         </div>
@@ -52,6 +52,7 @@ Zbook.propTypes = {
   lll: PropTypes.string.isRequired,
   llll: PropTypes.string.isRequired,
   lllll: PropTypes.string.isRequired,
+  Removebook: PropTypes.func.isRequired,
 };
 
 export default Zbook;

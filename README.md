@@ -39,6 +39,7 @@ This is a react project that allows you to create a list of books and view them 
   <li>HTML5</li> 
   <li>CSS3</li>
   <li>Reactt</li>
+  <li>Redux Toolkit </li>
 </ul>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -57,7 +58,7 @@ This is a react project that allows you to create a list of books and view them 
 - Improved the typography and spacing of the website to enhance its visual appeal.
 - I Used react to manipulate DOM elements.
 - I Used react events.
-
+- I used reducers and actions
 # 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy of the project up and running, follow these steps.

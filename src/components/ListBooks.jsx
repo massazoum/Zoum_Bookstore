@@ -1,45 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Zbook from './StateBook';
 import './ListBooks.css';
 import Form from './FormAdd';
+import { removeBook } from '../redux/books/BookSlice';
 
 function ListBook() {
-  const [Books, setBooks] = useState([
-    {
-      Type: 'Action',
-      Name: 'The Hunger Games',
-      Percent: '64%',
-      NameAuthor: 'Suzanne Collins',
-      ChapterBook: 'Chapter 17',
+  const books = useSelector((state) => state.books.books);
+  const dispatch = useDispatch();
 
-    },
-    {
-      Type: 'Science-Fiction',
-      Name: 'Dune',
-      Percent: '8%',
-      NameAuthor: 'Frank Herbert',
-      ChapterBook: 'Chapter 3: "A Lesson Learned"',
-    },
-    {
-      Type: 'Economy',
-      Name: 'Capital in the Twenty-First Century',
-      Percent: '0%',
-      NameAuthor: 'Suzanne Collins',
-      ChapterBook: 'Introduction',
-    },
-  ]);
-
-  useEffect(() => {
-    const fg = {
-      Name: 'Honda',
-    };
-    setBooks((prevBooks) => [...prevBooks, fg]);
-  }, []);
-
-  useEffect(() => {
-    const updatedBooks = Books.filter((book) => book.Name !== 'Honda');
-    setBooks(updatedBooks);
-  }, []);
+  const handleremove = (event) => {
+    const clickedButton = event.target;
+    dispatch(removeBook(clickedButton.parentElement.parentElement.querySelector('.Title').textContent));
+  };
 
   const lineStyle = {
     width: '75vw',
@@ -48,19 +20,10 @@ function ListBook() {
     border: 'solid 1px #e8e8e8',
   };
 
-  const buttons = document.querySelectorAll('.Remove');
-  const ArrButtons = Array.from(buttons);
-  ArrButtons.forEach((element) => {
-    element.addEventListener('click', () => {
-      const el = element.parentElement.parentElement.parentElement;
-      el.style.display = 'none';
-    });
-  });
-
   return (
     <>
       <div>
-        {Books.map((element) => (
+        {books.map((element) => (
           <Zbook
             key={element}
             l={element.Type}
@@ -68,6 +31,7 @@ function ListBook() {
             lll={element.NameAuthor}
             llll={element.ChapterBook}
             lllll={element.Percent}
+            Removebook={handleremove}
           />
         ))}
       </div>
