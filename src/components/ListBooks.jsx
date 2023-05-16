@@ -7,10 +7,9 @@ import { removeBook } from '../redux/books/BookSlice';
 function ListBook() {
   const books = useSelector((state) => state.books.books);
   const dispatch = useDispatch();
-
   const handleremove = (event) => {
-    const clickedButton = event.target;
-    dispatch(removeBook(clickedButton.parentElement.parentElement.querySelector('.Title').textContent));
+    const clickedButton = parseInt(event.target.className, 10);
+    dispatch(removeBook(clickedButton));
   };
 
   const lineStyle = {
@@ -26,11 +25,12 @@ function ListBook() {
         {books.map((element) => (
           <Zbook
             key={element}
-            l={element.Type}
-            ll={element.Name}
-            lll={element.NameAuthor}
+            l={element.category}
+            ll={element.title}
+            lll={element.author}
             llll={element.ChapterBook}
             lllll={element.Percent}
+            Idbutton={element.item_id}
             Removebook={handleremove}
           />
         ))}

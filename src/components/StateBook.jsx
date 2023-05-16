@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Zbook.css';
 
 function Zbook({
-  ll, l, lll, llll, lllll, Removebook,
+  ll, l, lll, llll, lllll, Removebook, Idbutton,
 }) {
   return (
     <div className="Divbook" id="Z">
@@ -20,7 +20,7 @@ function Zbook({
         <div className="DivBtns">
           <button className="Comments" type="button">Comments</button>
 
-          <button className="Remove" onClick={Removebook} type="button">Remove</button>
+          <button className={Idbutton} onClick={Removebook} type="button" id="Remove">Remove</button>
 
           <button className="Edit" type="button">Edit</button>
         </div>
@@ -53,6 +53,7 @@ Zbook.propTypes = {
   llll: PropTypes.string.isRequired,
   lllll: PropTypes.string.isRequired,
   Removebook: PropTypes.func.isRequired,
+  Idbutton: PropTypes.string.isRequired,
 };
 
 export default Zbook;

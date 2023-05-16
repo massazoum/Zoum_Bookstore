@@ -3,8 +3,13 @@ import './FormAdd.css';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/BookSlice';
 
+let counter = 2;
 function Form() {
-  // const books = useSelector((state) => state.books.books);
+  function generateId() {
+    counter += 1;
+    return counter;
+  }
+
   const dispatch = useDispatch();
 
   const handleAddBook = () => {
@@ -13,10 +18,10 @@ function Form() {
       const selectedOption = selectElement.options[selectElement.selectedIndex];
       dispatch(addBook({
         Type: selectedOption.textContent,
-        Name: document.querySelector('.inpText').value,
+        title: document.querySelector('.inpText').value,
         Percent: '8%',
-        NameAuthor: 'Frank Herbert',
-        ChapterBook: 'Chapter 3: "A Lesson Learned"',
+        author: 'Richard Dawkins',
+        item_id: generateId(),
       }));
     }
   };
