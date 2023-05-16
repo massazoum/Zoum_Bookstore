@@ -1,22 +1,9 @@
 import React from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-// import { removeBook } from '../redux/BookSlice';
 import './Zbook.css';
-
 function Zbook({
   ll, l, lll, llll, lllll, Removebook,
 }) {
-  // const books = useSelector((state) => state.books.books);
-  // const dispatch = useDispatch();
-
-  // const Remove = () => {
-  //   dispatch(removeBook({
-  //     Name: 'Dune',
-  //   }));
-  //   console.log(books);
-  // };
-
   return (
     <div className="Divbook" id="Z">
       <div className="sectionA">
