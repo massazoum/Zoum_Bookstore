@@ -1,10 +1,22 @@
 import React from 'react';
-import './Zbook.css';
+// import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
+// import { removeBook } from '../redux/BookSlice';
+import './Zbook.css';
 
 function Zbook({
-  ll, l, lll, llll, lllll,
+  ll, l, lll, llll, lllll, Removebook,
 }) {
+  // const books = useSelector((state) => state.books.books);
+  // const dispatch = useDispatch();
+
+  // const Remove = () => {
+  //   dispatch(removeBook({
+  //     Name: 'Dune',
+  //   }));
+  //   console.log(books);
+  // };
+
   return (
     <div className="Divbook" id="Z">
       <div className="sectionA">
@@ -20,7 +32,7 @@ function Zbook({
         <div className="DivBtns">
           <button className="Comments" type="button">Comments</button>
 
-          <button className="Remove" type="button">Remove</button>
+          <button className="Remove" onClick={Removebook} type="button">Remove</button>
 
           <button className="Edit" type="button">Edit</button>
         </div>
@@ -52,6 +64,7 @@ Zbook.propTypes = {
   lll: PropTypes.string.isRequired,
   llll: PropTypes.string.isRequired,
   lllll: PropTypes.string.isRequired,
+  Removebook: PropTypes.func.isRequired,
 };
 
 export default Zbook;
