@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import Zbook from './StateBook';
+import Book from './StateBook';
 import './ListBooks.css';
 import Form from './FormAdd';
 import { removeBook } from '../redux/books/BookSlice';
@@ -7,6 +7,7 @@ import { removeBook } from '../redux/books/BookSlice';
 function ListBook() {
   const books = useSelector((state) => state.books.books);
   const dispatch = useDispatch();
+
   const handleremove = (event) => {
     const clickedButton = parseInt(event.target.className, 10);
     dispatch(removeBook(clickedButton));
@@ -23,14 +24,14 @@ function ListBook() {
     <>
       <div>
         {books.map((element) => (
-          <Zbook
+          <Book
             key={element}
             l={element.category}
-            ll={element.title}
-            lll={element.author}
+            TITLE={element.title}
+            AUTHOR={element.author}
             llll={element.ChapterBook}
             lllll={element.Percent}
-            Idbutton={element.item_id}
+            ID={element.item_id}
             Removebook={handleremove}
           />
         ))}
