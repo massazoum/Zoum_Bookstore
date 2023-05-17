@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './FormAdd.css';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/BookSlice';
 
+let counter = 2;
 function Form() {
-  // const books = useSelector((state) => state.books.books);
+  function generateId() {
+    counter += 1;
+    return counter;
+  }
+
   const dispatch = useDispatch();
 
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+
+  const handlechangTitle = (event) => {
+    setTitle(event.target.value);
+  };
+  const handleAuthor = () => {
+    setAuthor('John Smith');
+  };
+
   const handleAddBook = () => {
-    if (document.querySelector('.inpText').value !== '') {
-      const selectElement = document.getElementById('dd');
-      const selectedOption = selectElement.options[selectElement.selectedIndex];
-      dispatch(addBook({
-        Type: selectedOption.textContent,
-        Name: document.querySelector('.inpText').value,
-        Percent: '8%',
-        NameAuthor: 'Frank Herbert',
-        ChapterBook: 'Chapter 3: "A Lesson Learned"',
-      }));
-    }
+    handleAuthor();
+    dispatch(addBook({
+      title,
+      author,
+      item_id: generateId(),
+    }));
   };
 
   return (
@@ -27,7 +37,7 @@ function Form() {
       <div>
         <form action="">
           <label htmlFor="bookTitle">
-            <input type="text" id="bookTitle" className="inpText" name="bookTitle" placeholder="Book title" required />
+            <input type="text" id="bookTitle" className="inpText" name="bookTitle" placeholder="Book title" required onChange={handlechangTitle} />
           </label>
           <label htmlFor="dd">
             <select name="" id="dd" className="Select">
