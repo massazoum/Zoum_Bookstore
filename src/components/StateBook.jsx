@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Zbook.css';
 
 function Book({
-  TITLE, l, AUTHOR, llll, lllll, Removebook, ID,
+  TITLE, AUTHOR, ID, Removebook, l, llll, lllll,
 }) {
   return (
     <div className="Divbook" id="Z">
