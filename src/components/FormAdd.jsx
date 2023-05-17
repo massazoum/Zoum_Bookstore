@@ -23,18 +23,12 @@ function Form() {
   };
 
   const handleAddBook = () => {
-    if (document.querySelector('.inpText').value !== '') {
-      handleAuthor();
-      const selectElement = document.getElementById('dd');
-      const selectedOption = selectElement.options[selectElement.selectedIndex];
-      dispatch(addBook({
-        Type: selectedOption.textContent,
-        title,
-        Percent: '8%',
-        author,
-        item_id: generateId(),
-      }));
-    }
+    handleAuthor();
+    dispatch(addBook({
+      title,
+      author,
+      item_id: generateId(),
+    }));
   };
 
   return (
