@@ -1,36 +1,54 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const initialState = {
-  books: [
-    {
-      item_id: 0,
-      title: 'The Great Gatsby',
-      author: 'John Smith',
-      category: 'Fiction',
-      Percent: '64%',
-      ChapterBook: 'Chapter 17',
-    },
-    {
-      item_id: 1,
-      title: 'Anna Karenina',
-      author: 'Leo Tolstoy',
-      category: 'Fiction',
-      Percent: '8%',
-      ChapterBook: 'Chapter 3: "A Lesson Learned"',
-    },
-    {
-      item_id: 2,
-      title: 'The Selfish Gene',
-      author: 'Richard Dawkins',
-      category: 'Nonfiction',
-      NameAuthor: 'Suzanne Collins',
-      ChapterBook: 'Introduction',
-    },
-  ],
-};
+export const postData = createAsyncThunk('fecthBooks', async () => {
+  try {
+    const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/');
+    console.log(response.data);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+export const getListBook = createAsyncThunk('fechtBooks', async () => {
+  try {
+    const response = await axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/XISo38gwNhXdKdbu3B94/books');
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+export const postnewbook = createAsyncThunk('data/postnewbook', async (requestbook) => {
+  try {
+    const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/XISo38gwNhXdKdbu3B94/books', JSON.stringify(requestbook), {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+export const deletebook = createAsyncThunk('data/deletebook', async (IDD) => {
+  try {
+    const response = await axios.delete(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/XISo38gwNhXdKdbu3B94/books/${IDD}`);
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 const bookSlice = createSlice({
   name: 'books',
-  initialState,
+  initialState: {
+    books: [],
+    loading: false,
+    error: null,
+  },
   reducers: {
     addBook: (state, action) => {
       state.books.push(action.payload);
@@ -39,7 +57,12 @@ const bookSlice = createSlice({
       state.books = state.books.filter((book) => book.item_id !== action.payload);
     },
   },
-
+  extraReducers: (builder) => {
+    builder
+      .addCase(getListBook.fulfilled, (state, action) => {
+        state.books = action.payload;
+      });
+  },
 });
 
 export const { addBook, removeBook } = bookSlice.actions;
