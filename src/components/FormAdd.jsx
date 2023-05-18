@@ -2,7 +2,7 @@ import { v4 as uuid } from 'uuid';
 import React, { useState } from 'react';
 import './FormAdd.css';
 import { useDispatch } from 'react-redux';
-import { postnewbook } from '../redux/books/BookSlice';
+import { postnewbook, getListBook } from '../redux/books/BookSlice';
 
 function Form() {
   const dispatch = useDispatch();
@@ -29,7 +29,8 @@ function Form() {
       author,
       item_id: uuid(),
       category,
-    }));
+    }))
+      .then(() => dispatch(getListBook()));
   };
 
   return (

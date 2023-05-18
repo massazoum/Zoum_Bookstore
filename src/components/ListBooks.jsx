@@ -9,14 +9,17 @@ function ListBook() {
   const books = useSelector((state) => state.books.books);
   const dispatch = useDispatch();
   console.log(books);
+
   const handleremove = (event) => {
     const clickedButton = event.target.className;
-    dispatch(deletebook(clickedButton));
+    dispatch(deletebook(clickedButton))
+      .then(() => dispatch(getListBook()));
   };
   console.log(books);
+
   useEffect(() => {
-    dispatch(getListBook());
     dispatch(deletebook());
+    dispatch(getListBook());
   }, []);
 
   const lineStyle = {

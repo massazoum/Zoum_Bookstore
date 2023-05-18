@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-export const postData = createAsyncThunk('data/postData', async () => {
+export const postData = createAsyncThunk('fecthBooks', async () => {
   try {
     const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/');
     console.log(response.data);
@@ -10,7 +10,7 @@ export const postData = createAsyncThunk('data/postData', async () => {
   }
 });
 
-export const getListBook = createAsyncThunk('data/getListBook', async () => {
+export const getListBook = createAsyncThunk('fechtBooks', async () => {
   try {
     const response = await axios.get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/XISo38gwNhXdKdbu3B94/books');
     console.log(response.data);
