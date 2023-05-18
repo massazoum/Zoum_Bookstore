@@ -1,17 +1,23 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import Book from './StateBook';
 import './ListBooks.css';
 import Form from './FormAdd';
-import { removeBook } from '../redux/books/BookSlice';
+import { getListBook, deletebook } from '../redux/books/BookSlice';
 
 function ListBook() {
   const books = useSelector((state) => state.books.books);
   const dispatch = useDispatch();
-
+  console.log(books);
   const handleremove = (event) => {
-    const clickedButton = parseInt(event.target.className, 10);
-    dispatch(removeBook(clickedButton));
+    const clickedButton = event.target.className;
+    dispatch(deletebook(clickedButton));
   };
+  console.log(books);
+  useEffect(() => {
+    dispatch(getListBook());
+    dispatch(deletebook());
+  }, []);
 
   const lineStyle = {
     width: '75vw',
@@ -19,22 +25,26 @@ function ListBook() {
     margin: '2.5rem 0.063rem 1.813rem 0',
     border: 'solid 1px #e8e8e8',
   };
+  const renderData = Object.keys(books).map((key) => {
+    const item = books[key][0];
+    console.log(key);
+    console.log(Object.keys(books)[key]);
+    return (
+      <Book
+        key={key}
+        AUTHOR={item.author}
+        TITLE={item.title}
+        l={item.category}
+        Removebook={handleremove}
+        ID={key}
+      />
+    );
+  });
 
   return (
     <>
       <div>
-        {books.map((element) => (
-          <Book
-            key={element}
-            l={element.category}
-            TITLE={element.title}
-            AUTHOR={element.author}
-            llll={element.ChapterBook}
-            lllll={element.Percent}
-            ID={element.item_id}
-            Removebook={handleremove}
-          />
-        ))}
+        {renderData}
       </div>
       <div className="Line" style={lineStyle}> </div>
     </>
