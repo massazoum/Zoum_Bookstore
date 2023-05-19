@@ -1,10 +1,9 @@
 main {
-  /* background-color: var(--pale-grey); */
-  background-color: rgba(216, 216, 216, 0.098);
+  background-color: #fafafa;
   width: 80vw;
   padding-left: 5vw;
   height: auto;
   padding-bottom: 20px;
-  box-shadow: -1px 0 15px 13px rgba(0, 0, 0, 0.117);
+  box-shadow: 0 0 60px 0 #00000026;
   margin-left: 5vw;
 }
