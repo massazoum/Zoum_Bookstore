@@ -94,7 +94,7 @@
 .material-icons {
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 34px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -107,11 +107,11 @@
 
 .iconbutton {
   cursor: pointer;
-  width: 2.813rem;
-  height: 2.813rem;
-  margin-right: 5vw;
+  width: auto;
+  height: auto;
   margin-top: 10px;
   border-radius: 50%;
   border: 1px solid #e8e8e8;
   background-color: #fff;
+  margin-left: -200px;
 }

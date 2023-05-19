@@ -11,6 +11,7 @@
   padding-top: 10px;
   border: solid 5px var(--white);
   padding-right: -10vw;
+  padding-bottom: 10px;
 }
 
 .sectionA {
@@ -19,6 +20,7 @@
   width: 550px;
   row-gap: 10px;
   margin-left: 15px;
+  margin-top: 10px;
 }
 
 .action {
@@ -39,7 +41,6 @@
 .Typebook {
   width: 6.688rem;
   height: 1.188rem;
-  margin: 0.25rem 0 0;
   font-family: 'poppins', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -53,7 +54,6 @@
 .tr {
   width: 22.813rem;
   height: 1.813rem;
-  margin: 0.188rem 9.688rem 0 0;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -115,6 +115,7 @@
 .sectionB {
   display: flex;
   margin-right: -60px;
+  margin-top: 20px;
 }
 
 .-Percent-Complete {
@@ -146,6 +147,7 @@
   flex-direction: column;
   row-gap: 10px;
   width: 20vw;
+  margin-top: 20px;
 }
 
 .Current-Chapter {
