@@ -2,15 +2,15 @@
   display: flex;
   background-color: white;
   width: 80vw;
-  height: 15vh;
-  margin-bottom: 5vh;
+  height: 10vh;
+  margin-bottom: 2vh;
   padding-left: 5vw;
   margin-left: -5vw;
 }
 
 .divnav {
   width: 80vw;
-  height: 20vh;
+  height: 15vh;
   padding-left: 5vw;
   margin-left: -5vw;
 }
@@ -110,7 +110,7 @@
   width: 2.813rem;
   height: 2.813rem;
   margin-right: 5vw;
-  margin-top: 35px;
+  margin-top: 10px;
   border-radius: 50%;
   border: 1px solid #e8e8e8;
   background-color: #fff;
