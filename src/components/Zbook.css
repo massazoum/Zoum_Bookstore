@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   width: 75vw;
-  height: 20vh;
+  height: auto;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
@@ -49,6 +49,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+  margin-top: -10px;
 }
 
 .tr {
