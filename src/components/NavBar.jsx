@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import user from '../images/user.png'
+import user from '../images/user.png';
 
 function Nav() {
   return (
@@ -13,11 +13,15 @@ function Nav() {
           {' '}
           <Link to="./Author" className="book-link">Categories</Link>
         </div>
-        <button class="iconbutton" type="button"><span class="material-icons primary-color"> <img src={user} width="70%" height="70%" alt="" /></span></button>
-  
-       
+        <button className="iconbutton" type="button">
+          <span className="material-icons primary-color">
+            {' '}
+            <img src={user} width="70%" height="70%" alt="" />
+          </span>
+        </button>
+
       </div>
-  
+
     </div>
 
   );

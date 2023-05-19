@@ -35,7 +35,7 @@ function Form() {
 
   return (
     <div className="DivForm">
-      <div className='TitleBooK'>ADD NEW BOOK</div>
+      <div className="TitleBooK">ADD NEW BOOK</div>
       <div>
         <form action="">
           <label htmlFor="bookTitle">

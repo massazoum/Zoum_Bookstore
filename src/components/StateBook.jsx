@@ -39,7 +39,7 @@ function Book({
       <div className="sectionC">
         <div className="Current-Chapter">CURRENT CHAPTER</div>
         <div>
-         Chapter 
+          Chapter
           {' '}
         </div>
         <button type="button" className="Update-progress">update</button>
