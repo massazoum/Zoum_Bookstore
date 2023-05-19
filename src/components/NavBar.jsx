@@ -5,23 +5,19 @@ import user from '../images/user.png';
 
 function Nav() {
   return (
-    <div className="divnav">
-      <div className="DivNav">
-        <div className="Bookstore-CMS">Bookstore CMS </div>
-        <div className="BOOKS"><Link to="./" className="book-link">Book</Link></div>
-        <div className="CATEGORIES">
+    <div className="divnav commun-divnav">
+      <div className="DivNav commun-divnav">
+        <div className="Bookstore-CMS commun-style">Bookstore CMS </div>
+        <div className="BOOKS commun-nav"><Link to="./" className="book-link">Book</Link></div>
+        <div className="CATEGORIES commun-nav">
           {' '}
-          <Link to="./Author" className="book-link">Categories</Link>
+          <Link to="./Author" className="book-link commun-style">Categories</Link>
         </div>
-        <button className="iconbutton" type="button">
-          <span className="material-icons primary-color">
-            {' '}
-            <img src={user} width="70%" height="70%" alt="" />
-          </span>
-        </button>
-
       </div>
-
+      <div className="iconbutton" type="button">
+        {' '}
+        <img src={user} className="icoImg" width="70%" height="70%" alt="" />
+      </div>
     </div>
 
   );

@@ -18,13 +18,13 @@ function Book({
           {AUTHOR}
         </div>
         <div className="DivBtns">
-          <button className="Comments" type="button">Comments</button>
+          <button className="Comments commun-btn" type="button">Comments</button>
 
           <div className="Line-1" />
           <button className={ID} onClick={Removebook} type="button" id="Remove">Remove</button>
 
           <div className="Line-1" />
-          <button className="Edit" type="button">Edit</button>
+          <button className="Edit commun-btn" type="button">Edit</button>
         </div>
 
       </div>
@@ -42,7 +42,7 @@ function Book({
           Chapter
           {' '}
         </div>
-        <button type="button" className="Update-progress">update</button>
+        <button type="button" className="Update-progress">Update progress</button>
       </div>
     </div>
   );

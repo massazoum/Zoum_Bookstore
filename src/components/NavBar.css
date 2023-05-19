@@ -1,38 +1,44 @@
 .DivNav {
-  display: flex;
   background-color: white;
-  width: 80vw;
   height: 10vh;
   margin-bottom: 2vh;
   padding-left: 5vw;
   margin-left: -5vw;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.commun-divnav {
+  width: 80vw;
+  display: flex;
 }
 
 .divnav {
-  width: 80vw;
   height: 15vh;
   padding-left: 5vw;
   margin-left: -5vw;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Bookstore-CMS {
-  /* display: flex; */
   margin: 1.125rem 2.563rem 0.688rem 0;
-  width: auto;
-  font-family: 'poppins', sans-serif;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #0290ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
 }
 
 .BOOKS {
   width: 3.688rem;
   height: 1rem;
-  margin: 1.125rem 2.563rem 0.688rem 0;
-  font-family: 'poppins', sans-serif;
+  margin: 2rem 2.563rem 0.688rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
+  letter-spacing: 1.9px;
+}
+
+.commun-nav {
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -45,16 +51,9 @@
 .CATEGORIES {
   width: 6.563rem;
   height: 1rem;
-  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  margin: 2rem 41.5rem 0.688rem 2.563rem;
   opacity: 0.5;
   font-family: 'poppins', sans-serif;
-  font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.9px;
-  color: #121212;
 }
 
 .book-link {
@@ -63,10 +62,6 @@
   margin: 1.125rem 2.563rem 0.688rem 0;
   font-family: 'poppins', sans-serif;
   font-size: 0.813rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
   color: #121212;
   text-decoration: none;
@@ -91,27 +86,25 @@
   color: #0290ff;
 }
 
-.material-icons {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 34px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-}
-
 .iconbutton {
   cursor: pointer;
-  width: auto;
+  position: absolute;
+  width: 40px;
   height: auto;
-  margin-top: 10px;
+  right: 13%;
+  margin-top: 15px;
   border-radius: 50%;
   border: 1px solid #e8e8e8;
   background-color: #fff;
-  margin-left: -200px;
+}
+
+.commun-style {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.icoImg {
+  margin-left: 5px;
 }
