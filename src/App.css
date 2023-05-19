@@ -1,5 +1,6 @@
 main {
-  background-color: var(--pale-grey);
+  /* background-color: var(--pale-grey); */
+  background-color: rgba(216, 216, 216, 0.098);
   width: 80vw;
   padding-left: 5vw;
   height: auto;

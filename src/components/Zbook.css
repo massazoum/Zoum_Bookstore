@@ -2,20 +2,23 @@
 .Divbook {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+  width: 75vw;
   height: 20vh;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
   margin-bottom: 10px;
   padding-top: 10px;
+  border: solid 5px var(--white);
+  padding-right: -10vw;
 }
 
 .sectionA {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 550px;
   row-gap: 10px;
+  margin-left: 15px;
 }
 
 .action {
@@ -45,6 +48,19 @@
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
+}
+
+.tr {
+  width: 22.813rem;
+  height: 1.813rem;
+  margin: 0.188rem 9.688rem 0 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
 }
 
 .Comments {
@@ -98,12 +114,12 @@
 
 .sectionB {
   display: flex;
+  margin-right: -60px;
 }
 
 .-Percent-Complete {
   width: auto;
   height: 2.438rem;
-  margin: 0.063rem 7.063rem 0 0.688rem;
   font-family: 'poppins', sans-serif;
   font-size: 2rem;
   font-weight: normal;
@@ -162,4 +178,20 @@
 
 .DivBtns {
   display: flex;
+}
+
+.Line-2 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 1.125rem 3.688rem 0 4.938rem;
+  border: solid 1px var(--white);
+  background-color: rgba(216, 216, 216, 0.433);
+}
+
+.Line-1 {
+  width: 0.125rem;
+  height: 1.5rem;
+  margin-left: 8px;
+  border: solid 1px var(--white);
+  background-color: rgba(216, 216, 216, 0.433);
 }
