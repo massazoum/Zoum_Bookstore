@@ -1,11 +1,7 @@
 
-.Title {
+.TitleBooK {
   font-family: 'poppins', sans-serif;
   font-size: 1.25rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
 }
@@ -29,16 +25,21 @@
 .BtnSumit {
   margin-left: 10px;
   height: 30px;
-  width: 10vw;
+  width: 13vw;
+  cursor: pointer;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: 'poppins', sans-serif;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
   font-size: 0.813rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+
+.common-style {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #fff;
 }

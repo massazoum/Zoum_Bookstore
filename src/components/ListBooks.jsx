@@ -27,6 +27,7 @@ function ListBook() {
     height: '0.125rem',
     margin: '2.5rem 0.063rem 1.813rem 0',
     border: 'solid 1px #e8e8e8',
+    backgroundColor: 'rgba(216, 216, 216, 0.433)',
   };
   const renderData = Object.keys(books).map((key) => {
     const item = books[key][0];
@@ -40,6 +41,7 @@ function ListBook() {
         l={item.category}
         Removebook={handleremove}
         ID={key}
+
       />
     );
   });
