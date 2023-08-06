@@ -108,3 +108,22 @@
 .icoImg {
   margin-left: 5px;
 }
+
+@media (max-width: 780px) {
+  .CATEGORIES {
+    display: none;
+    width: 6.563rem;
+    height: 1rem;
+    margin: 2rem 41.5rem 0.688rem 2.563rem;
+    opacity: 0.5;
+    font-family: 'poppins', sans-serif;
+  }
+
+  .commun-style {
+    font-size: large;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}

@@ -37,7 +37,7 @@ function Form() {
     <div className="DivForm">
       <div className="TitleBooK common-style">ADD NEW BOOK</div>
       <div>
-        <form action="">
+        <form action="" className="formdivform">
           <label htmlFor="bookTitle">
             <input type="text" id="bookTitle" className="inpText" name="bookTitle" placeholder="Book title" required onChange={handlechangTitle} />
           </label>
@@ -54,7 +54,7 @@ function Form() {
               </optgroup>
             </select>
           </label>
-          <button className="BtnSumit common-style" onClick={handleAddBook} type="button">Add Book</button>
+          <div className="btnsumettre"><button className="BtnSumit common-style" onClick={handleAddBook} type="button">Add Book</button></div>          
         </form>
       </div>
     </div>

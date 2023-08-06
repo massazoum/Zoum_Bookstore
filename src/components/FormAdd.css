@@ -43,3 +43,40 @@
   font-style: normal;
   line-height: normal;
 }
+
+@media (max-width: 780px) {
+  .BtnSumit {
+    padding-left: 5px;
+    height: 30px;
+    width: 52vw;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #0290ff;
+    border: none;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 0.813rem;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .formdivform {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+
+  .inpText {
+    height: 23px;
+    width: 60vw;
+  }
+
+  .Select {
+    height: 30px;
+    width: 52vw;
+  }
+
+  .btnsumettre {
+    margin-left: -10px;
+  }
+}
