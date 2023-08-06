@@ -101,7 +101,7 @@ To run tests, run the following command:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Deployment
-[Zoum_Bookstore](https://zoum-bookstore.onrender.com)
+[Zoum_Bookstore](https://64cf80e60ad7293d14b83e93--stirring-bublanina-e200bb.netlify.app)
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Massa zoumanigui**
