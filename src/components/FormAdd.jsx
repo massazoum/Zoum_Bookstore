@@ -54,7 +54,7 @@ function Form() {
               </optgroup>
             </select>
           </label>
-          <div className="btnsumettre"><button className="BtnSumit common-style" onClick={handleAddBook} type="button">Add Book</button></div>          
+          <div className="btnsumettre"><button className="BtnSumit common-style" onClick={handleAddBook} type="button">Add Book</button></div>
         </form>
       </div>
     </div>
